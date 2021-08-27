@@ -1,11 +1,11 @@
 import Head from "next/head";
-// import { MicrophoneIcon, ViewGridIcon } from "@heroicons/react/solid";
-// import { SearchIcon } from "@heroicons/react/outline";
-// import { useRouter } from "next/router";
-// import { useRef } from "react";
-// import Image from "next/image";
-// import Footer from "../components/Footer";
-// import Avatar from "../components/Avatar";
+import { MicrophoneIcon, ViewGridIcon } from "@heroicons/react/solid";
+import { SearchIcon } from "@heroicons/react/outline";
+import { useRouter } from "next/router";
+import { useRef } from "react";
+import Image from "next/image";
+import Footer from "../components/Footer";
+import Avatar from "../components/Avatar";
 
 export default function Home() {
 	const router = useRouter();
