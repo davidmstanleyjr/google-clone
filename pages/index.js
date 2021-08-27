@@ -14,9 +14,9 @@ export default function Home() {
 	const search = (e) => {
 		e.preventDefault();
 		const term = searchInputRef.current.value;
-
+		// if there is no term, simply return nothing
 		if (!term) return;
-
+		// redirects the user to the page for the search term
 		router.push(`/search?term=${term}`);
 	};
 
