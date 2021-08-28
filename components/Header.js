@@ -38,6 +38,7 @@ function Header() {
 						defaultValue={router.query.term}
 						type="text"
 					/>
+					{/* Clears the value in the searchbar */}
 					<XIcon
 						className="sm:mr-3 h-7 text-gray-500 cursor-pointer transition duration-100 transform hover:scale-125"
 						onClick={() => (searchInputRef.current.value = "")}
