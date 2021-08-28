@@ -23,7 +23,7 @@ function Header() {
 		<header className="sticky top-0 bg-white">
 			<div className="flex w-full p-6 items-center">
 				<Image
-					src="https://www.google.co.uk/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+					src="https://res.cloudinary.com/ddet8to42/image/upload/v1630185865/Google-clone/googlelogo_color_272x92dp_wpskel.png"
 					height={40}
 					width={120}
 					alt=""
@@ -51,7 +51,9 @@ function Header() {
 				</form>
 				<Avatar
 					className="ml-auto"
-					url={"https://coaching.papareact.com/ai9"}
+					url={
+						"https://res.cloudinary.com/ddet8to42/image/upload/v1630186082/Google-clone/akuma_avatar_du1pws.jpg"
+					}
 				/>
 			</div>
 

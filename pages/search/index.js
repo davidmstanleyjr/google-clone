@@ -23,7 +23,7 @@ export default function Search({ results }) {
 }
 
 export async function getServerSideProps(context) {
-	const useDummyData = true;
+	const useDummyData = false;
 	// Defines the number of the first page
 	const startIndex = context.query.start || "0";
 

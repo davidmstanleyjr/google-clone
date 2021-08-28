@@ -38,14 +38,18 @@ export default function Home() {
 					<p className="link">Images</p>
 					<ViewGridIcon className="h-10 w-10 p-2 rounded-full hover:bg-gray-100 cursor-pointer" />
 
-					<Avatar url={"https://coaching.papareact.com/ai9"} />
+					<Avatar
+						url={
+							"https://res.cloudinary.com/ddet8to42/image/upload/v1630186082/Google-clone/akuma_avatar_du1pws.jpg"
+						}
+					/>
 				</div>
 			</header>
 
 			{/* Body */}
 			<form className="flex flex-grow items-center mt-44 flex-col w-4/5">
 				<Image
-					src="https://www.google.co.uk/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+					src="https://res.cloudinary.com/ddet8to42/image/upload/v1630185865/Google-clone/googlelogo_color_272x92dp_wpskel.png"
 					height={100}
 					width={300}
 					alt=""
