@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import Header from "../../components/Header";
 import Response from "../../Response";
-import { API_KEY, CONTEXT_KEY } from "../../keys";
+// import { API_KEY, CONTEXT_KEY } from "../../keys";
 import SearchResults from "../../components/SearchResults";
 
 export default function Search({ results }) {
@@ -30,7 +30,7 @@ export async function getServerSideProps(context) {
 	const data = useDummyData
 		? Response
 		: await fetch(
-				`https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${CONTEXT_KEY}&q=${context.query.term}&start=${startIndex}`
+				`https://www.googleapis.com/customsearch/v1?key=${process.env.API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${context.query.term}&start=${startIndex}`
 		  ).then((response) => response.json());
 
 	// Pass back the results
