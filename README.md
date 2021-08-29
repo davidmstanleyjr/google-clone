@@ -1,34 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Google-clone
 
-## Getting Started
+This is my second attempt at making a Google Search engine clone. The first time, I used the Wikipedia api but I wanted to try and use the Google search api. This project was both difficult and fun and I learned a lot. I used Next.js again, as well as Tailwind.css. They are both two really great and robust frameworks and I'll be using them again in the future. The google search api was kind of a pain to work with though.
 
-First, run the development server:
+## Environment Setup
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+1. Clone my repo at https://github.com/davidmstanleyjr/google-clone
+2. CD into it and type "npm install".
+3. Then type "NPM run dev".
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+1. React
+2. Hero Icons
+3. Tailwind CSS
+4. Next.js
+5. React DOM
+6. Tailwind CSS Lineclamp
+7. Google Search API
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+# Issues
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+This project wasn't too bad but I ended up working with an API that doesn't work as expected. Google search api restricts how many times per day you can query their API. That was annoying because sometimes I'll get hundreds of search results and other times I'll get significantly less.
 
-## Learn More
+I also had to write logic for actually searching for stuff and I had to write more logic for pulling the results an populating them on to the page. That was tough to do. Then I had to write more logic for pagination. That gives my application the ability to go from one page of search results to the next.
 
-To learn more about Next.js, take a look at the following resources:
+Then I had to have a header and footer that appears on each page and I also had to include the ability to search from the search bar regardless of what page you were on. I didn't want people to have to only search from the home page. These were all things that I had to implement that I never thought about having to implement.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Screenshots
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+![Screenshot 1](images/snip1.PNG)
+![Screenshot 2](images/snip2.PNG)![Screenshot 3](images/snip3.PNG)![Screenshot 4](images/snip4.PNG)
 
-## Deploy on Vercel
+## Live Page
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Here is a link to the deployed site
+https://davids-search.vercel.app/
